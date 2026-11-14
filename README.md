@@ -6,7 +6,7 @@
 
 An academic machine-learning study comparing classification models on ICU records, with a focus on detecting the minority sepsis class.
 
-[View Notebook](notebooks/Sepsis_Early_Detection.ipynb) · [Results](#results-from-the-saved-experiment) · [Dataset Source](https://physionet.org/content/challenge-2019/1.0.0/training/) · [Developer Portfolio](https://yasser-alassad-portfolio.vercel.app/)
+[View Notebook](Sepsis_Project_GitHub_Final/notebooks/Sepsis_Early_Detection.ipynb) · [Results](#results-from-the-saved-experiment) · [Dataset Source](https://physionet.org/content/challenge-2019/1.0.0/training/) · [Developer Portfolio](https://yasser-alassad-portfolio.vercel.app/)
 
 </div>
 
@@ -32,7 +32,7 @@ Sepsis is a serious condition for which timely recognition matters. For this **C
 
 The workflow aggregates vital signs (e.g., heart rate, oxygen saturation, temperature, blood pressure and respiratory rate) into summary statistics such as mean, standard deviation, minimum and maximum. It then applies imputation, feature scaling and **SMOTE** to address the underrepresented positive class.
 
-![Sepsis class distribution before and after SMOTE](figures/smote_class_balance.png)
+![Sepsis class distribution before and after SMOTE](Sepsis_Project_GitHub_Final/figures/smote_class_balance.png)
 
 ## Methods
 
@@ -62,24 +62,24 @@ For the saved Random Forest evaluation, the **sepsis class** has precision ≈ *
 
 **ROC curves**
 
-![ROC curves of model predictions](figures/roc_curves.png)
+![ROC curves of model predictions](Sepsis_Project_GitHub_Final/figures/roc_curves.png)
 
 **Confusion matrices**
 
-![Confusion matrices for classifiers](figures/confusion_matrices.png)
+![Confusion matrices for classifiers](Sepsis_Project_GitHub_Final/figures/confusion_matrices.png)
 
 **Feature importance (Random Forest)**
 
-![Random Forest feature importance](figures/feature_importance.png)
+![Random Forest feature importance](Sepsis_Project_GitHub_Final/figures/feature_importance.png)
 
-[See precision–recall curves](figures/precision_recall_curves.png).
+[See precision–recall curves](Sepsis_Project_GitHub_Final/figures/precision_recall_curves.png).
 
 ## Reproducibility
 
 The notebook was originally developed in **Google Colab** and prompts you to upload a CSV dataset. The repository deliberately excludes the two large CSV exports and generated model checkpoints.
 
 1. Obtain the project's **preprocessed** `Dataset.csv` (see [data instructions](data/README.md)). It is not the same format as the raw downloaded PhysioNet `.psv` files.
-2. Open [`notebooks/Sepsis_Early_Detection.ipynb`](notebooks/Sepsis_Early_Detection.ipynb) in Google Colab.
+2. Open [`notebooks/Sepsis_Early_Detection.ipynb`](Sepsis_Project_GitHub_Final/notebooks/Sepsis_Early_Detection.ipynb) in Google Colab.
 3. Upload `Dataset.csv` when prompted in the first data-loading cell.
 4. Run the cells in order; some model-training steps (particularly SVM and cross-validation) can be computationally expensive.
 
